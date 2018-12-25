@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <style>    
+    li {
+      list-style-type: none; /* Убираем маркеры */
+   }
+    ul {
+      padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+   }
+   body { 
+    margin-left: 30%; /* Убираем отступы */
+    margin-top: 10%;
+   }   
+    </style>
+</head>
+<body>
+    <form name="registration form" method="POST" align="justify">
+    <label><b>Форма регистрации. Все поля обязательны к заполнению</b></label>
+      <ul>
+          <li>
+             <input type="text" name="name" placeholder="Укажите имя" required>&nbsp;<span>Имя</span> 
+          </li>
+      </ul>
+      <ul>
+        <li>
+            <input type="text" name="surname" placeholder="Укажите Фамилию" required>&nbsp;<span>Фамилия</span> 
+        </li>
+      </ul>
+      <ul>
+        <li>
+        <input type="date" name="date" size="100" required>&nbsp;
+        <span style='padding-left:23px;'>Дата рождения</span>
+        </li>
+      </ul>
+      <ul>
+        <li>
+            <input type="email" name="email" placeholder="Укажите e-mail" required>&nbsp;<span>Email</span> 
+        </li>
+      </ul>    
+      <ul>
+        <li>
+            <input type="radio" name="sex" required>&nbsp;<span>М</span>
+            <input type="radio" name="sex" required>&nbsp;<span>Ж</span>
+            <span style='padding-left:90px;'>Пол</span>
+        </li>
+      </ul>
+      <ul>
+          <li>
+              <input type="checkbox" name="site" required><span>Сайт</span>
+              <input type="checkbox" name="site" required><span>Форум</span>
+              <span style='padding-left:48px;'>Назначение регистрации</span>
+          </li>
+      </ul>
+      
+      <ul>
+          <li>
+              <input type="submit" value="Отправить">
+          </li>
+      </ul> 
+    </form>
+
+</body>
